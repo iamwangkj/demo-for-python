@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 import tushare as ts
 import pymysql
 
-
 def setDataToDB(tableName):
   df = ts.get_today_all()
   engine = create_engine('mysql+pymysql://qdm142902383:password_here@qdm142902383.my3w.com/qdm142902383_db?charset=utf8')
