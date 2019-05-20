@@ -5,7 +5,6 @@ import pymysql
 
 def setDataToDB(tableName):
   df = ts.get_today_all()
-  # 获取实时数据：df = ts.get_realtime_quotes('000002')
   engine = create_engine('mysql+pymysql://qdm142902383:password_here@qdm142902383.my3w.com/qdm142902383_db?charset=utf8')
   #存入数据库
   # if_exists:如果表名已存在的处理方式 {‘fail’, ‘replace’, ‘append’},默认‘fail’
